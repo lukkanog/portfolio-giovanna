@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>teste</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+</head>
+
+<body>
+    <header class="topo container" id="home">
+        <div class="topo_content content">
+            <h1>&lt;gc&gt;</h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#serviços">Serviços</a></li>
+                    <li><a href="#expereiencias">Experiências</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+        <span class="btm_menu" onclick="botao_menu()"><img src="img/menu-alt-512.png" alt="Menu"></span>
+    </header>
+    <main>
+        <section class="banner container">
+            <div class="banner_content content">
+                <picture>
+                    <img src="img/maac.png" alt="ícone de um monitor de computador" id="pc">
+                    <img src="img/tablet e cllr.png" alt="ícone de um celular e um tablet" id="cel">
+                </picture>
+                <hgroup>
+                    <h2>Giovanna<br>Camargo</h2>
+                    <h3>Desenvolvedor Web|Photoshop|<br>HTML5|CSS3</h3>
+                </hgroup>
+        </section>
+        <section class="sobre container" id="sobre">
+            <div class="sobre_content content">
+                <h2>Sobre</h2>
+                <div class="sobre_flex">
+                    <div class="txt_box">
+                        <hgroup>
+                            <h3>Giovanna<br>Camargo</h3>
+                            <h4>Desenvolvedor Web|Photoshop|HTML5|CSS3</h4>
+                        </hgroup>
+                        <br>
+                        <p>Comecei a desenvolver códigos em 2019 na escola SENAI de informática, localizada na Santa
+                            Cecília.</p>
+                        <br>
+                        <p>Desenvolvo Projetos voltados para o fortacelimento do cliente na web, através de análise
+                            concorrencial e das melhores estratégias,utilizando sempre tecnologias avançadas e ideias
+                            inovadoras.</p>
+                        <br>
+                    </div>
+                    <div>
+
+                        <img src="img/Agrupar 1.png" alt="Foto de perfil">
+                    </div>
+                </div>
+                <p id="telefone">11 96410-4270</p>
+            </div>
+        </section>
+        <section class="serviços container" id="serviços">
+            <div class="serviços_content content">
+                <h2>Serviços</h2>
+                <div id="coluna">
+                    <div class="flex">
+                        <div class="box">
+                            <img src="img/scrum-a5c44d8364.png" alt="Ícone do Scrum">
+                            <h3>scrum</h3>
+                        </div>
+                        <div class="box">
+                            <img src="img/C_Sharp_wordmark.svg.png" alt="Ícone do c#">
+                            <h3>c#</h3>
+                        </div>
+                        <div class="box">
+                            <img src="img/development.png" alt="Ícone do html5">
+                            <h3>html5</h3>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="box">
+                            <img src="img/md_5b001b7c022c2.png" alt="Ícone photoshop">
+                            <h3>Photoshop</h3>
+                        </div>
+                        <div class="box">
+                            <img src="img/React.js_logo-512.png" alt="Ícone do React">
+                            <h3>React</h3>
+                        </div>
+                        <div class="box">
+                            <img src="img/File_-_CSS-512.png" alt="Ícone css3">
+                            <h3>css</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="experiencias container" id="experiencias">
+            <div class="experiencias_content content">
+                <h2>Experiências</h2>
+                <div class="flex">
+                    <div class="box">
+                        <p>McBonald"s</p>
+                        <img src="img/mcbonalds.png" alt="Site da hamburgueria McBonalds">
+                    </div>
+                    <div class="box">
+                        <p>Ponto Digital</p>
+                        <img src="img/pontodigital.png" alt="Site do Ponto Digital">
+                    </div>
+                    <div class="box">
+                        <p>Lucas Nogueira</p>
+                        <img src="img/PORTFOLIO.png" alt="Site do Lucas Nogueira">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+            <footer id="contato">
+                <div class="content">
+                    <hgroup>
+                        <h3>Giovanna Camargo</h3>
+                        <h4>Desenvolvedor Web|Photoshop|HTML5|CSS3</h4>
+                    </hgroup>
+                    <address>
+                        nome@email.com
+                        <br />
+                        (11) 4002 8922
+                        <br>
+                        (11) 9 0000 0000
+                    </address>
+                    <br>
+                    </address>
+                </div>
+            </footer>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script>
+              $(function() {
+                var nav = $('.menu');
+                var botao = $('.btm_menu');
+                botao.on('click',function(){
+                     nav.toggleClass("active");
+                });
+                });
+            </script>
+</body>
+
+</html> 
